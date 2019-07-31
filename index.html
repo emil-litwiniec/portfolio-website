@@ -1,390 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Martel:200,300" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+	<!-- <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon/favicon.ico"> -->
 
-<!-------------- PHOTOSWIPE ----------->
-    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css"> 
-    <link rel="stylesheet" href="photoswipe/dist/default-skin/default-skin.css"> 
-    <script src="photoswipe/dist/photoswipe.min.js"></script> 
-    <script src="photoswipe/dist/photoswipe-ui-default.min.js"></script> 
 
-    <title>Emil Litwiniec - illustrator</title>
+
+	<title>Emil Litwiniec | Javascript Developer</title>
 </head>
 
 <body>
-<div class="container">
 
-    <div class="test"></div>
-    
-    <header class="header hero rellax" data-rellax-speed="-2">
-        
-            <nav  class="nav-bar">
-                    <ul class="nav-bar__panel">
-                            <div class="nav-bar__panel-left">
-                                <img class="nav-bar__panel-left--logo" src="img/logo_white-2x.png" alt="Logo" id="landing-page">
-                            </div>
-                            <div class="nav-bar__panel-right">
-                                    <li class="nav-bar__item"><a class="button" href="#work" data-id="work">work</a></li>
-                                    <li class="nav-bar__item"><a class="button"href="#info" data-id="info">info</a></li>
-                                </div>
-                    </ul>
-                </nav>
-        
-        <div class="header__text rellax" data-rellax-speed="-1">
-            <h1 class="heading-1 ">Emil Litwiniec</h1>
-            <h3 class="heading-2" data-id="illustrator">illustrator</h3>
-            <div class="language">
-                <button class="language-change button" data-pl>pl</button>
-                <button class="language-change button" data-en>en</button>
-            </div>
-        </div>
-        <div class="scroll-down"></div>
-    </header>
-    <main class="main">
-            <div class="logo-container showOnScroll">
-                   <img class="logo-container__logo scrollToTop" src="img/logo_blue-2x.png" alt="Logo">
-                </div>
-            <div class="nav showOnScroll">
-                    <ul class="nav__items">
-                        <li class="nav__items--link"><a class="work-link" href="#work" data-id="work">work</a></li>
-                        <li class="nav__items--link"><a class="info-link" href="#info" data-id="info">info</a></li>
-                    </ul>
-            </div>
-        <section class="work" >
+	<header class="header">
+		<div class="header-container">
+			<h1 class="header__name">Emil</br> Litwiniec</h1>
+			<!-- <div class="header__title-wrapper"> -->
+				<h2 class="header__title">javascript developer</h2>
 
+			<!-- </div> -->
 
-            <div class="my-gallery pt-md" itemscope itemtype="http://schema.org/ImageGallery">
+			<p class="header__text">Programista javascript z doświadczeniem w brazy graficznej z nieustanną chęcią do rozwoju.</p>
+			<ul class="header__btn-list">
+				<li><a href="#" class="btn-list__linked"><img src="img/linkedin_logo.svg" alt="LinkedIn"></a></li>
+				<li><a href="#" class="btn-list__git"><img src="img/git_logo.png" alt="Repozytorium"></a></li>
+				<li><a href="#" class="btn-list__email">e-mail</a></li>
+				<li><a href="#" class="btn-list__cv">CV</a></li>
+			</ul>
+			<p class="header__stack">Javascript | React | Redux | Node.js | Express | PostgreSQL | Firebase | Material-UI | Styled Components | HTML
+				| CSS ( Sass ) | Webpack | Babel | Git + Jest / Mocca | MongoDB</p>
+		</div>
 
-            <figure itemprop="associatedMedia"  itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-1-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img 
-                    src="img/il-1-thumbnail-min.jpg"
-                    itemprop="thumbnail" 
-                    alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description" data-nr="1"></figcaption>
-            </figure>
+	</header>
+	<main class="main">
 
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-2-1x-min.jpg" itemprop="contentUrl" data-size="1500x1682">
-                    <img src="img/il-2-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description" data-nr="2"></figcaption>
-            </figure>
+	</main>
 
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-3-1x-min.jpg" itemprop="contentUrl" data-size="1500x1668">
-                    <img src="img/il-3-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-4-1x-min.jpg" itemprop="contentUrl" data-size="2000x1500">
-                    <img class="my-gallery__img--4" src="img/il-4-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia"   id="work"itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-5-1x-min.jpg" itemprop="contentUrl" data-size="1500x1682">
-                    <img src="img/il-5-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-6a-1x-min.jpg" itemprop="contentUrl" data-size="1902x1500">
-                    <img src="img/il-6a-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-6b-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img src="img/il-6b-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-            
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-8-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img src="img/il-8-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-9-1x-min.jpg" itemprop="contentUrl" data-size="1500x1501">
-                    <img src="img/il-9-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-10-1x-min.jpg" itemprop="contentUrl" data-size="1500x1762">
-                    <img src="img/il-10-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-11-1x-min.jpg" itemprop="contentUrl" data-size="1500x1593">
-                    <img src="img/il-11-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-12-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img src="img/il-12-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-13-1x-min.jpg" itemprop="contentUrl" data-size="1500x2143">
-                    <img src="img/il-13-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-14-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img src="img/il-14-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-15-1x-min.jpg" itemprop="contentUrl" data-size="1500x1917">
-                    <img src="img/il-15-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-16-1x-min.jpg" itemprop="contentUrl" data-size="1500x1817">
-                    <img src="img/il-16-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure class="my-gallery__3span" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a  href="img/il-17-1x-min.jpg" itemprop="contentUrl" data-size="4026x1500">
-                    <img class="my-gallery__img--17" src="img/il-17-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-17b-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img src="img/il-17b-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-18-1x-min.jpg" itemprop="contentUrl" data-size="2122x1500">
-                    <img src="img/il-18-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-19-1x-min.jpg" itemprop="contentUrl" data-size="2190x1500">
-                    <img src="img/il-19-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-20-1x-min.jpg" itemprop="contentUrl" data-size="1676x1500">
-                    <img src="img/il-20-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-21-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img src="img/il-21-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-22-1x-min.jpg" itemprop="contentUrl" data-size="1750x1500">
-                    <img class="my-gallery__img--22" src="img/il-22-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure class="my-gallery__3span" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-22b-1x-min.jpg" itemprop="contentUrl" data-size="3809x1500">
-                    <img class="my-gallery__img--22b" src="img/il-22b-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-            
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-23-1x-min.jpg" itemprop="contentUrl" data-size="1500x1500">
-                    <img src="img/il-23-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-23b-1x-min.jpg" itemprop="contentUrl" data-size="1500x2143">
-                    <img src="img/il-23b-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-24-1x-min.jpg" itemprop="contentUrl" data-size="1500x1833">
-                    <img src="img/il-24-thumbnail-min.jpg" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="img/il-25-min.png" itemprop="contentUrl" data-size="1500x1833">
-                    <img src="img/il-25-thumbnail-1x-min.png" itemprop="thumbnail" alt="Illustration" />
-                </a>
-                <figcaption itemprop="caption description"></figcaption>
-            </figure>
-
-    
-
-
-</div>
-        </section>
-        <section class="info pt-md pb-md" id="info">
-            <p class="info__text " data-id="infoText">
-                Village did removed enjoyed explain nor ham saw calling talking.
-                 Securing as informed declared or margaret. Joy horrible moreover 
-                 man feelings own shy. Request norland neither mistake for yet. 
-                 Between the for morning assured country believe. On even feet 
-                 time have an no at. Relation so in confined smallest children 
-                 unpacked delicate. Why sir end believe uncivil respect. Always 
-                 get adieus nature day course for common. My little garret repair 
-                 to desire he esteem. Wrong do point avoid by fruit learn or in death. 
-                 So passage however besides invited comfort elderly be me. Walls 
-                 began of child civil am heard hoped my. Satisfied pretended mr 
-                 on do determine by. Old post took and ask seen fact rich. Man 
-                 entrance settling believed eat joy. Money as drift begin on to. 
-                 Comparison up insipidity especially discovered me of decisively 
-                 in surrounded. Points six way enough she its father. Folly sex 
-                 downs tears ham green forty. 
-            </p>
-            <img class="info__img"src="img/twarz_500px.jpg" alt="Emil Litwiniec" ">
-
-            <div class="info__contact">
-                <h4 class="info__contact-touch" data-id="infoContactTouch">Get in touch</h4>
-                <p class="info__contact-text" data-id="infoContactText"> If you'd like to find out more about me,
-                     talk about working together, or just want to say hello, drop me a line!
-                </p>
-                <p class="info__contact-text"> Email: emilitwiniec@gmail.com <br>
-                        Tel: (+48) 660 386 908
-                        </p>
-            </div>
-
-        </section>
-    </main>
-
- <!--          FOOTER             -->
-
-    <footer class="footer">
-        <p class="footer__text">Copyright Emil Litwiniec 2019</p>
-    </footer>
-
- <!--          STICKY NAV-BAR MOBILE             -->
-
-    <nav class="fixed-nav-bar showOnScroll">
-            <ul class="fixed-nav-bar__items">
-                    <img class="fixed-nav-bar__logo scrollToTop" src="img/logo_blue-2x.png" alt="Logo">
-                        <li class="fixed-nav-bar__items--link"><a class="work-link" href="#work" data-id="work">work</a></li>
-                        <li class="fixed-nav-bar__items--link"><a class="info-link" href="#info" data-id="info">info</a></li>
-                    </ul>
-    </nav>
-
-    <!--    PHOTOSWIPE       -->
-
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe. 
-             It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-    
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-    
-            <!-- Container that holds slides. 
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-    
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-    
-                <div class="pswp__top-bar">
-    
-                    <div class="pswp__counter"></div>
-    
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-    
-    
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-    
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-    
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                          <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div> 
-                </div>
-    
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-    
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-    
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-    
-            </div>
-    
-        </div>
-    
-    </div>
-
-
-    <script type="text/javascript" src="rellax.min.js"></script>
-    <script>
-    	var rellax = new Rellax('.rellax', {
-        callback: function(position) {
-        }
-      });
-    </script>
-</div>
 </body>
 <script src="main.js"></script>
 
