@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server && npm run import-scss",
-    "devserver2": "concurrently \"npm:watch:sass\" \"live-server\" \"npm:import-scss\" ",
+    "devserver": "concurrently \"npm:import-scss\" \"npm:watch:sass\"  ",
     "start": "import-scss",
     "import-scss": "nodemon --exec 'import-scss' --ignore .js --ignore main.scss --ext scss",
     "browser-sync": "browser-sync start --server",
@@ -27,7 +26,6 @@
   },
   "dependencies": {
     "browser-sync": "^2.26.3",
-    "concurrently": "^4.1.1",
-    "fsevents": "^2.0.7"
+    "concurrently": "^4.1.1"
   }
 }

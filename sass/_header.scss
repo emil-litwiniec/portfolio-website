@@ -1,16 +1,19 @@
 .header {
   &__name {
     font-size: 5rem;
-  }
+    color: $color-gray-dark;
+}
   &__title {
   font-size: 2.5rem;
   width: max-content;
   font-weight: 400;
+  color: $color-gray-dark;
   }
   &__text {
     font-size: 1.8rem;
     margin-top: 14rem;
-  }
+  color: $color-gray-dark;
+}
   &__btn-list {
     display: flex;
     justify-content: space-between;
@@ -19,6 +22,7 @@
   }
   &__stack {
     margin-top: 3rem;
+    line-height: 160%;
   }
 }
 
@@ -26,17 +30,21 @@
   &__email {
     font-weight: 700;
     font-size: 1.8rem;
-  }
+    color: $color-gray-light;
+}
   &__cv {
     font-weight: 700;
     font-size: 2.4rem;
+    color: $color-gray-light;
   }
   &__git img {
     width: 9rem;
     height: 100%;
+    opacity: .3;
   } 
   &__linked img {
     width: 3rem;
     height: 100%;
+    opacity: .3;
   } 
 }

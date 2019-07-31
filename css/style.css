@@ -12,6 +12,12 @@ a {
 html {
   font-size: 52.5%; }
 
+button {
+  background: none;
+  border-style: none;
+  border: none;
+  cursor: pointer; }
+
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", "Arial", serif;
@@ -19,16 +25,19 @@ body {
   display: flex; }
 
 .header__name {
-  font-size: 5rem; }
+  font-size: 5rem;
+  color: #535353; }
 
 .header__title {
   font-size: 2.5rem;
   width: max-content;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #535353; }
 
 .header__text {
   font-size: 1.8rem;
-  margin-top: 14rem; }
+  margin-top: 14rem;
+  color: #535353; }
 
 .header__btn-list {
   display: flex;
@@ -37,23 +46,28 @@ body {
   align-items: center; }
 
 .header__stack {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  line-height: 160%; }
 
 .btn-list__email {
   font-weight: 700;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  color: #acacac; }
 
 .btn-list__cv {
   font-weight: 700;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  color: #acacac; }
 
 .btn-list__git img {
   width: 9rem;
-  height: 100%; }
+  height: 100%;
+  opacity: .3; }
 
 .btn-list__linked img {
   width: 3rem;
-  height: 100%; }
+  height: 100%;
+  opacity: .3; }
 
 .header {
   flex-basis: 40%;
@@ -64,7 +78,57 @@ body {
   display: flex;
   flex-direction: column; }
 
-.main {
+.projects {
   flex-basis: 60%;
   width: 100%;
   height: 100vh; }
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.carousel-inner {
+  height: 57.5vh; }
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin-left: 6rem; }
+  .carousel-controls img {
+    width: 5rem;
+    height: 100%;
+    opacity: .3; }
+
+.projects-title {
+  margin-top: 12.5rem;
+  margin-right: 12rem;
+  align-self: flex-end;
+  font-weight: 400; }
+
+.project {
+  width: 46%;
+  height: 54%;
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0; }
+  .project--1 {
+    background-color: blue; }
+  .project--2 {
+    background-color: red; }
+  .project--3 {
+    background-color: green; }
+  .project--4 {
+    background-color: yellow; }
+  .project--5 {
+    background-color: coral; }
+  .project--6 {
+    background-color: cornflowerblue; }
+  .project--7 {
+    background-color: goldenrod; }
+  .project--8 {
+    background-color: deeppink; }
+
+.active {
+  transform: translateX(0);
+  opacity: 1; }
