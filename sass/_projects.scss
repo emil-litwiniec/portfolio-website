@@ -67,10 +67,24 @@
 
   &__link {
     font-size: 2rem;
+    // transition: all 1s ease-in-out;
+    &:hover img {
+    // transition: all 1s ease-in-out;
+    transform: translateX(-7px);
+    }
+    &:active img {
+    // transition: all 1s ease-in-out;
+    transform: translateX(7px);
+    }
 
     & img {
+      transition: transform .2s cubic-bezier(0.46, 0.21, 0, 1.63);
       margin-right: 1.5rem;
       width: 5rem;
+
+      // &:hover {
+      //   transform: translateX(-20px);
+      // }
     }
   }
 

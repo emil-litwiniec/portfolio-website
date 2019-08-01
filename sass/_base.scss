@@ -15,11 +15,23 @@ html {
     font-size: 52.5%;
 }
 
-button {
+.button {
     background: none;
     border-style: none;
     border: none;
     cursor: pointer;
+    transition: all .2s ease-in;
+
+    &:hover {
+        color: $color-gray-dark;
+    }
+}
+
+.btn-image {
+    transition: all .2s ease-in;
+    &:hover {
+        opacity: .75;
+    }
 }
 
 
