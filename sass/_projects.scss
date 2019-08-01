@@ -1,10 +1,11 @@
 .carousel-inner {
   height: 57.5vh;
+  position: relative;
 }
 .carousel-controls {
   display: flex;
   justify-content: space-between;
-  width: 65%;
+  width: 74%;
   margin-left: 6rem;
   & img {
     width: 5rem;
@@ -15,43 +16,84 @@
 
 
 .projects-title {
-  margin-top: 12.5rem;
-  margin-right: 12rem;
+  margin: 12.5rem 12rem 4rem 0;
   align-self: flex-end;
   font-weight: 400;
+  color: $color-gray-dark;
 }
 
 .project {
-  width: 46%;
-  height: 54%;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  left: 8rem;
   transform: translateX(-100%);
   opacity: 0;
 
   &--1{
-    background-color: blue;
   }
   &--2{
-    background-color: red;
   }
   &--3{
-    background-color: green;
   }
   &--4{
-    background-color: yellow;
   }
   &--5{
-    background-color: coral;
   }
   &--6{
-    background-color: cornflowerblue;
   }
   &--7{
-    background-color: goldenrod;
   }
   &--8{
-    background-color: deeppink;
   }
+
+  &__index {
+    color: $color-gray-light;
+    font-size: 4rem;
+  }
+
+  &__name {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 8rem;
+  }
+  &__links-wrapper {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 2rem;
+
+    & img {
+      margin-right: 1.5rem;
+      width: 5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+  }
+
+  &__stack {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    color: $color-gray-light;
+
+  }
+
+
+}
+
+.project-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .active {

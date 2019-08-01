@@ -24,15 +24,17 @@
 
 			<!-- </div> -->
 
-			<p class="header__text">Programista javascript z doświadczeniem w branży graficznej z nieustanną chęcią do rozwoju.</p>
+			<p class="header__text">Programista javascript z doświadczeniem w branży graficznej 
+				i nieustanną potrzebą rozwoju.</p>
 			<ul class="header__btn-list">
 				<li><a href="#" class="btn-list__linked"><img src="img/linkedin_logo.svg" alt="LinkedIn"></a></li>
 				<li><a href="#" class="btn-list__git"><img src="img/git_logo.png" alt="Repozytorium"></a></li>
 				<li><a href="#" class="btn-list__email">e-mail</a></li>
 				<li><a href="#" class="btn-list__cv">CV</a></li>
 			</ul>
-			<p class="header__stack">Javascript | React | Redux | Node.js | Express | PostgreSQL | Firebase | Material-UI | Styled Components | HTML
-				| CSS ( Sass ) | Webpack | Babel | Git + Jest / Mocca | MongoDB</p>
+			<p class="header__stack">Javascript | React | Redux | Node.js | Express |
+				 PostgreSQL | Firebase | Material-UI | Styled Components | HTML
+				| CSS ( Sass ) | Webpack | Babel | Git <span class="text-lighter">  + Jest / Mocca | MongoDB </span></p>
 		</div>
 
 	</header>
@@ -40,18 +42,132 @@
 		<div class="projects-wrapper">
 			<h3 class="projects-title">Projekty</h3>
 			<div class="carousel-inner">
-				<div class="project project--1 active"></div>
-				<div class="project project--2"></div>
-				<div class="project project--3"></div>
-				<div class="project project--4"></div>
-				<div class="project project--5"></div>
-				<div class="project project--6"></div>
-				<div class="project project--7"></div>
-				<div class="project project--8"></div>
+				<div id="project1" class="project project--1 active">
+					<div class="project-container">
+							<p class="project__index">1/8</p>
+							<div class="project__links-wrapper">
+								<a 
+									href="https://clio-library.herokuapp.com" 
+									class="project__link"><img src="img/arrow_link.svg" alt=""
+									>
+									live
+								</a>
+								<a 
+									href="https://github.com/EmilTheSadCat/clio-library-app" 
+									class="project__link"><img src="img/arrow_link.svg" alt=""
+									>
+									repozytorium
+								</a>
+							</div>
+						</div>
+						<h4 class="project__name">Clio</h4>
+					<p class="project__text">Aplikacja biblioteczna z dostępem dla administratora, użytkownika i gościa.
+						 Posiada rozbudowany system wyszukiwania pozycji w katalogu za pomocą filtrów,
+						  możliwość tworzenia, modyfikowania oraz usuwania danych oraz wypożyczania 
+						  i rezerwowania książek.</p>
+					<p class="project__stack">Node.js / Express | JWT | PostgreSQL | React | Redux | Material-UI</p>
+					
+				</div>
+				<div id="project2" class="project project--2">
+					<div class="project-container">
+							<p class="project__index">2/8</p>
+							<div class="project__links-wrapper">
+								<a href="https://blogster-react-app.herokuapp.com/" class="project__link"><img src="img/arrow_link.svg" alt="">live</a>
+								<a href="https://github.com/EmilTheSadCat/react-blog-app" class="project__link"><img src="img/arrow_link.svg" alt="">repozytorium</a>
+							</div>
+						</div>
+						<h4 class="project__name">Blogster</h4>
+						<p class="project__text">Mini serwis blogowy z możliwością dodawania, modyfikowania, 
+							usuwania postów., podzielony na część gościa oraz administratora. Możliwość 
+							dodawania komentarzy pod postami. Autentyfikacja, baza danych  i 
+							przechowywanie obrazów zbudowana z wykorzystaniem Google Firebase.</p>
+						<p class="project__stack">React | Sass | Firebase | Node.js / Express</p>
+				</div>
+				<div id="project3" class="project project--3">
+					<div class="project-container">
+							<p class="project__index">3/8</p>
+							<div class="project__links-wrapper">
+								<a href="https://www.npmjs.com/package/rename-them-all" class="project__link"><img src="img/arrow_link.svg" alt="">npm</a>
+								<a href="https://github.com/EmilTheSadCat/rename-them-all" class="project__link"><img src="img/arrow_link.svg" alt="">repozytorium</a>
+							</div>
+						</div>
+						<h4 class="project__name">rename-them-all</h4>
+						<p class="project__text">Program konsolowy ( CLI ) opublikowany jako paczka NPM, 
+							który umożliwia zmianę nazw wielu plików w folderze z poziomu konsoli.
+							 Pozwala także na dodawanie prefiksów oraz sufiksów do już istniejących 
+							 nazw plików.</p>
+						<p class="project__stack">Javascript / Node.js</p>
+				</div>
+				<div id="project4" class="project project--4">
+					<div class="project-container">
+						<p class="project__index">4/8</p>
+						<div class="project__links-wrapper">
+							<a href="https://www.npmjs.com/package/import-scss" class="project__link"><img src="img/arrow_link.svg" alt="">npm</a>
+							<a href="https://github.com/EmilTheSadCat/import-scss" class="project__link"><img src="img/arrow_link.svg" alt="">repozytorium</a>
+						</div>
+					</div>
+					<h4 class="project__name">import-scss</h4>
+						<p class="project__text">Skrypt ułatwiający pracę z plikami .scss opublikowany
+							 jako paczka NPM. Automatyzuje czynność dodawania modułów do głównego
+							  pliku main.scss.</p>
+						<p class="project__stack">Javascript / Node.js</p>
+				</div>
+				<div id="project5" class="project project--5">
+					<div class="project-container">
+							<p class="project__index">5/8</p>
+							<div class="project__links-wrapper">
+								<a href="https://distracted-kalam-ae17b0.netlify.com/" class="project__link"><img src="img/arrow_link.svg" alt="">live</a>
+								<a href="https://github.com/EmilTheSadCat/minesweeper_game" class="project__link"><img src="img/arrow_link.svg" alt="">repozytorium</a>
+							</div>
+						</div>
+						<h4 class="project__name">Minesweeper</h4>
+						<p class="project__text">Gra typu saper. Napisana w czystym JavaScripcie, utrzymana w stylistyce pikselowych gier retro.
+							</p>
+						<p class="project__stack">Javascript</p>
+				</div>
+				<div id="project6" class="project project--6">
+					<div class="project-container">
+							<p class="project__index">6/8</p>
+							<div class="project__links-wrapper">
+								<a href="https://xenodochial-easley-a90af9.netlify.com/" class="project__link"><img src="img/arrow_link.svg" alt="">live</a>
+								<a href="https://github.com/EmilTheSadCat/tetris-game" class="project__link"><img src="img/arrow_link.svg" alt="">repozytorium</a>
+							</div>
+						</div>
+						<h4 class="project__name">Tetris</h4>
+						<p class="project__text">Gra napisana w czystym JavaScripcie, utrzymana w stylistyce pikselowych gier retro.</p>
+						<p class="project__stack">Javascript</p>
+				</div>
+				<div id="project7" class="project project--7">
+					<div class="project-container">
+							<p class="project__index">7/8</p>
+							<div class="project__links-wrapper">
+								<a href="https://mystifying-hamilton-091d33.netlify.com/" class="project__link"><img src="img/arrow_link.svg" alt="">live</a>
+								<a href="https://github.com/EmilTheSadCat/irma-tylor-portfolio" class="project__link"><img src="img/arrow_link.svg" alt="">repozytorium</a>
+							</div>
+						</div>
+						<h4 class="project__name">Irma Tylor - strona portfolio</h4>
+						<p class="project__text">Strona portfolio dla artystki i projektantki, słuząca ekspozycji jej projektów. Jest w pełni responsywna,
+							zaprojektowana w minimalistycznym, eleganckim duchu. </p>
+						<p class="project__stack">CSS | Sass | Javascript | HTML</p>
+				</div>
+				<div id="project8" class="project project--8">
+					<div class="project-container">
+							<p class="project__index">8/8</p>
+							<div class="project__links-wrapper">
+								<a href="https://stupefied-mirzakhani-167eb4.netlify.com/" class="project__link"><img src="img/arrow_link.svg" alt="">live</a>
+								<a href="https://github.com/EmilTheSadCat/illustration-portfolio" class="project__link"><img src="img/arrow_link.svg" alt="">repozytorium</a>
+							</div>
+						</div>
+						<h4 class="project__name">Strona portfolio z ilustracjami</h4>
+						<p class="project__text">Strona, którą przygotowałem dla siebie, zeby pokazywać swoje ilustracje. Jest to galeria obrazków
+							z funkcją przyblizania. Strona posiada mozliwość wyboru języka. Jest w pełni responsywna.
+						</p>
+						<p class="project__stack">CSS | Sass | Javascript | HTML</p>
+				</div>
 			</div>
 			<div class="carousel-controls">
-				<button class="carousel-controls__prev button" id="btn-prev"><img src="img/arrow_left.svg" alt="Previous"></button>
-				<button class="carousel-controls__next button" id="btn-next"><img src="img/arrow_right.svg" alt="Next"></button>
+				<button class="carousel-controls__prev button" id="btn-prev"><img src="/img/arrow_left.svg" alt="Previous"></button>
+				<button class="carousel-controls__next button" id="btn-next"><img src="/img/arrow_right.svg" alt="Next"></button>
 			</div>
 		</div>
 

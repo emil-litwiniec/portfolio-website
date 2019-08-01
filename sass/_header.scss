@@ -10,8 +10,8 @@
   color: $color-gray-dark;
   }
   &__text {
-    font-size: 1.8rem;
-    margin-top: 14rem;
+    font-size: 2.5rem;
+    margin-top: 10rem;
   color: $color-gray-dark;
 }
   &__btn-list {
@@ -21,6 +21,7 @@
     align-items: center;
   }
   &__stack {
+    color: $color-gray-dark;
     margin-top: 3rem;
     line-height: 160%;
   }

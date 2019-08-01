@@ -1,6 +1,19 @@
 const btnPrev = document.getElementById('btn-prev');
 const btnNext = document.getElementById('btn-next');
 
+window.addEventListener('keydown', e => {
+  switch(e.keyCode) {
+    case 37:
+      e.preventDefault();
+      setIndex('prev')
+      break;
+    case 39:
+      e.preventDefault();
+      setIndex('next');
+      break;
+  }
+})
+
 let projectIndex = 1;
 function setIndex(action) {
   const previousProjectIndex = projectIndex;
@@ -17,16 +30,16 @@ function setIndex(action) {
       projectIndex++
     }
   }
-  console.log('previous index', previousProjectIndex)
-  console.log('actual index',projectIndex);
-  // setActive(projectIndex);
+  handleActive.remove(previousProjectIndex);
+  handleActive.set(projectIndex);
 }
 const handleActive = {
   set(index) {
+    document.getElementById(`project${index}`).classList.add('active')
 
   },
   remove(index) {
-
+    document.getElementById(`project${index}`).classList.remove('active');
   }
 
 }
