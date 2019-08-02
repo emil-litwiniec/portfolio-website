@@ -34,6 +34,16 @@ html {
     }
 }
 
+.btn-svg {
+    width: 4rem;
+    height: 100%;
+    fill: $color-gray-light;
+    transition: all .2s ease-in;
+    &:hover {
+        fill: $color-gray-dark;
+    }
+}
+
 
 body {
     font-size: 1.6rem;

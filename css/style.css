@@ -26,6 +26,14 @@ html {
   .btn-image:hover {
     opacity: .75; }
 
+.btn-svg {
+  width: 4rem;
+  height: 100%;
+  fill: #acacac;
+  transition: all .2s ease-in; }
+  .btn-svg:hover {
+    fill: #535353; }
+
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", "Arial", serif;
