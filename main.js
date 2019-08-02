@@ -1,5 +1,60 @@
+
+
+//-----------  SELECT DOM ELEMENTS  ------------//
+
 const btnPrev = document.getElementById('btn-prev');
 const btnNext = document.getElementById('btn-next');
+const projectsWrapper = document.querySelector('.projects-wrapper');
+
+
+
+
+//-----------  TOUCH CONTROL  ------------//
+
+projectsWrapper.addEventListener('touchstart', startTouch, false);
+projectsWrapper.addEventListener('touchmove', moveTouch, false);
+
+let initialX = null;
+let initialY = null;
+
+function startTouch(event){
+  initialX = event.touches[0].clientX;
+  initialY = event.touches[0].clientY;
+};
+
+function moveTouch(event) {
+  if(initialX === null) {
+    return;
+  }
+
+  if(initialY === null) {
+    return;
+  }
+
+  let currentX = event.touches[0].clientX;
+  let currentY = event.touches[0].clientY;
+
+  let differenceX = initialX - currentX;
+  let differenceY = initialY - currentY;
+
+
+  if(Math.abs(differenceX) > Math.abs(differenceY)) {
+    if(differenceX > 0) {
+      setIndex('next');
+    } else {
+      setIndex('prev');
+    }
+  } 
+
+  initialX = null;
+  initialY = null;
+  event.preventDefault();
+
+}
+
+
+
+//-----------  KEYS CONTROL  ------------//
 
 window.addEventListener('keydown', e => {
   switch(e.keyCode) {
@@ -13,6 +68,10 @@ window.addEventListener('keydown', e => {
       break;
   }
 })
+
+
+
+//-----------  CAROUSEL CONTROLS  ------------//
 
 let projectIndex = 1;
 function setIndex(action) {

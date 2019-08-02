@@ -13,6 +13,13 @@ a {
 
 html {
     font-size: 52.5%;
+
+    @media only screen and (max-width: 1150px){
+        font-size: 48.5%;
+    }
+    @media only screen and (max-width: $bp-medium){
+        font-size: 46%;
+    }
 }
 
 .button {
@@ -49,5 +56,4 @@ body {
     font-size: 1.6rem;
     font-family: $font-primary;
     font-weight: 400;
-    display: flex;
 }

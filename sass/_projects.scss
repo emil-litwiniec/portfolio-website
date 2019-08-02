@@ -1,12 +1,24 @@
 .carousel-inner {
   height: 57.5vh;
   position: relative;
+
+  @media only screen and (max-width: $bp-medium){
+    height: 75vh;
+  }
+  @media only screen and (max-aspect-ratio: 4/8){
+    height: 80vh;
+  }
 }
 .carousel-controls {
   display: flex;
   justify-content: space-between;
   width: 74%;
   margin-left: 6rem;
+
+  @media only screen and (max-width: $bp-medium){
+    margin-left: auto;
+    margin-right: auto;
+  }
   & img {
     width: 5rem;
     height: 100%;
@@ -20,6 +32,14 @@
   align-self: flex-end;
   font-weight: 400;
   color: $color-gray-dark;
+
+  @media only screen and (max-width: $bp-medium){
+    margin: 6.5rem 6rem 4rem 0;
+}
+
+@media only screen and (max-width: $bp-xsmall){
+  margin: 3.5rem 6rem 4rem 0;
+}
 }
 
 .project {
@@ -32,6 +52,11 @@
   transform: translateX(-100%);
   opacity: 0;
 
+  @media only screen and (max-width: $bp-medium){
+    width: 82%;
+    left: 4rem;
+  }
+
   &__index {
     color: $color-gray-light;
     font-size: 4rem;
@@ -41,15 +66,44 @@
     font-size: 5rem;
     font-weight: 400;
     margin-top: 8rem;
+
+    @media only screen and (max-width: $bp-medium){
+      font-size: 4.5rem;
+  }
+
+  @media only screen and (max-width: $bp-xsmall){
+    font-size: 4.1rem;
+    margin-top: 3.5rem;
+  }
+  @media only screen and (max-aspect-ratio: 4/8){
+    font-size: 6.1rem;
+    margin-top: 13.5rem;
+  }
   }
   &__links-wrapper {
     display: flex;
     flex-basis: 60%;
     justify-content: space-between;
+
+
+    @media only screen and (max-width: 1150px){
+        flex-direction: column;
+    }
   }
 
   &__link {
     font-size: 2rem;
+
+    @media only screen and (max-aspect-ratio: 4/8){
+      font-size: 2.5rem;
+      width: max-content;
+    }
+    &:last-child {
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-top: 1.5rem;
+      }
+    }
     &:hover img {
     transform: translateX(-7px);
     }
@@ -67,6 +121,23 @@
   &__text {
     font-size: 1.8rem;
     margin-top: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium){
+      font-size: 2.4rem;
+      margin-top: 4.5rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall){
+      font-size: 2.1rem;
+      margin-top: 3.5rem;
+    }
+    
+    @media only screen and (max-aspect-ratio: 4/8){
+      font-size: 2.5rem;
+      margin-top: 9.5rem;
+    }
+    
+    
   }
 
   &__stack {
@@ -74,6 +145,9 @@
     margin-bottom: 2rem;
     color: $color-gray-light;
 
+    @media only screen and (max-width: $bp-medium){
+      font-size: 1.9rem;
+    }
   }
 
 
@@ -84,6 +158,10 @@
   align-items: baseline;
   justify-content: space-between;
   margin-top: 1rem;
+
+  @media only screen and (max-width: $bp-xsmall){
+    align-items: normal;
+}
 }
 
 .active {

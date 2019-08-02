@@ -2,6 +2,10 @@
   &__name {
     font-size: 5rem;
     color: $color-gray-dark;
+
+    @media only screen and (max-aspect-ratio: 4/8){
+      margin-top: 17rem;
+    }
 }
   &__title {
   font-size: 2.5rem;
@@ -13,17 +17,35 @@
     font-size: 2.5rem;
     margin-top: 10rem;
   color: $color-gray-dark;
+  
+  @media only screen and (max-width: $bp-xsmall){
+    margin-top: 5rem;
+  }
+        @media only screen and (max-aspect-ratio: 4/8){
+          margin-top: 13rem;
+        }
 }
   &__btn-list {
     display: flex;
     justify-content: space-between;
     margin-top: 14rem;
     align-items: center;
+    
+    @media only screen and (max-width: $bp-xsmall){
+      margin-top: 10rem;
+    }
+    @media only screen and (max-aspect-ratio: 4/8){
+      margin-top: 14rem;
+    }
   }
   &__stack {
     color: $color-gray-dark;
     margin-top: 3rem;
     line-height: 160%;
+
+    @media only screen and (max-width: $bp-medium){
+      font-size: 1.9rem;
+  }
   }
 }
 
@@ -32,20 +54,36 @@
     font-weight: 700;
     font-size: 1.8rem;
     color: $color-gray-light;
+
+    @media only screen and (max-width: $bp-medium){
+      font-size: 2.8rem;
+  }
 }
   &__cv {
     font-weight: 700;
     font-size: 2.4rem;
     color: $color-gray-light;
+
+    @media only screen and (max-width: $bp-medium){
+      font-size: 2.9rem;
+  }
   }
   &__git img {
     width: 9rem;
     height: 100%;
     opacity: .3;
+
+    @media only screen and (max-width: $bp-medium){
+      width: 12rem;
+  }
   } 
   &__linked img {
     width: 3rem;
     height: 100%;
     opacity: .3;
+
+    @media only screen and (max-width: $bp-medium){
+      width: 4rem;
+  }
   } 
 }
