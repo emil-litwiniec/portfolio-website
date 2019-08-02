@@ -41,14 +41,16 @@ function moveTouch(event) {
   if(Math.abs(differenceX) > Math.abs(differenceY)) {
     if(differenceX > 0) {
       setIndex('next');
+      event.preventDefault();
     } else {
       setIndex('prev');
+      event.preventDefault();
     }
   } 
 
   initialX = null;
   initialY = null;
-  event.preventDefault();
+  // event.preventDefault();
 
 }
 

@@ -24,6 +24,11 @@
         @media only screen and (max-aspect-ratio: 4/8){
           margin-top: 13rem;
         }
+
+        @media only screen and (max-width: $bp-xxsmall){
+          font-size: 2.2rem;
+          margin-top: 4rem;
+        }
 }
   &__btn-list {
     display: flex;
@@ -31,11 +36,14 @@
     margin-top: 14rem;
     align-items: center;
     
-    @media only screen and (max-width: $bp-xsmall){
+    @media only screen and (max-width: $bp-medium){
       margin-top: 10rem;
     }
     @media only screen and (max-aspect-ratio: 4/8){
       margin-top: 14rem;
+    }
+    @media only screen and (max-width: $bp-xxsmall){
+      margin-top: 4rem;
     }
   }
   &__stack {
@@ -45,6 +53,9 @@
 
     @media only screen and (max-width: $bp-medium){
       font-size: 1.9rem;
+  }
+  @media only screen and (max-width: $bp-xxsmall){
+    font-size: 1.5rem;
   }
   }
 }
@@ -58,6 +69,7 @@
     @media only screen and (max-width: $bp-medium){
       font-size: 2.8rem;
   }
+ 
 }
   &__cv {
     font-weight: 700;
@@ -76,6 +88,9 @@
     @media only screen and (max-width: $bp-medium){
       width: 12rem;
   }
+  @media only screen and (max-width: $bp-xxsmall){
+    width: 9rem;
+  }
   } 
   &__linked img {
     width: 3rem;
@@ -84,6 +99,9 @@
 
     @media only screen and (max-width: $bp-medium){
       width: 4rem;
+  }
+  @media only screen and (max-width: $bp-xxsmall){
+    width: 3.2rem;
   }
   } 
 }

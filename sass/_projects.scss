@@ -40,6 +40,9 @@
 @media only screen and (max-width: $bp-xsmall){
   margin: 3.5rem 6rem 4rem 0;
 }
+@media only screen and (max-width: $bp-xxsmall){
+  margin: 3.5rem 6rem 4rem 0;
+}
 }
 
 .project {
@@ -97,6 +100,10 @@
     @media only screen and (max-aspect-ratio: 4/8){
       font-size: 2.5rem;
       width: max-content;
+    }
+
+    @media only screen and (max-width: $bp-xxsmall){
+      font-size: 1.6rem;
     }
     &:last-child {
 
