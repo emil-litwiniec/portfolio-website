@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 li {
     list-style: none;
@@ -15,10 +14,10 @@ a {
 html {
     font-size: 52.5%;
 
-    @media only screen and (max-width: 1150px){
+    @media only screen and (max-width: 1150px) {
         font-size: 48.5%;
     }
-    @media only screen and (max-width: $bp-medium){
+    @media only screen and (max-width: $bp-medium) {
         font-size: 46%;
     }
 }
@@ -28,7 +27,7 @@ html {
     border-style: none;
     border: none;
     cursor: pointer;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
 
     &:hover {
         color: $color-gray-dark;
@@ -36,9 +35,9 @@ html {
 }
 
 .btn-image {
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
     &:hover {
-        opacity: .75;
+        opacity: 0.75;
     }
 }
 
@@ -46,12 +45,11 @@ html {
     width: 4rem;
     height: 100%;
     fill: $color-gray-light;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
     &:hover {
         fill: $color-gray-dark;
     }
 }
-
 
 body {
     font-size: 1.6rem;

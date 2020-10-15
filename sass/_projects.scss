@@ -1,177 +1,175 @@
 .carousel-inner {
-  height: 57.5vh;
-  position: relative;
+    height: 57.5vh;
+    position: relative;
 
-  @media only screen and (max-width: $bp-medium){
-    height: 75vh;
-  }
-  @media only screen and (max-aspect-ratio: 4/8){
-    height: 80vh;
-  }
+    @media only screen and (max-width: $bp-medium) {
+        height: 75vh;
+    }
+    @media only screen and (max-aspect-ratio: 4/8) {
+        height: 80vh;
+    }
 }
 .carousel-controls {
-  display: flex;
-  justify-content: space-between;
-  width: 74%;
-  margin-left: 6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 74%;
+    margin-left: 6rem;
 
-  @media only screen and (max-width: $bp-medium){
-    margin-left: auto;
-    margin-right: auto;
-  }
-  & img {
-    width: 5rem;
-    height: 100%;
-    opacity: .3;
-  }
+    @media only screen and (max-width: $bp-medium) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    & img {
+        width: 5rem;
+        height: 100%;
+        opacity: 0.3;
+    }
 }
-
 
 .projects-title {
-  margin: 12.5rem 12rem 4rem 0;
-  align-self: flex-end;
-  font-weight: 400;
-  color: $color-gray-dark;
+    margin: 12.5rem 12rem 4rem 0;
+    align-self: flex-end;
+    font-weight: 400;
+    color: $color-gray-dark;
 
-  @media only screen and (max-width: $bp-medium){
-    margin: 6.5rem 6rem 4rem 0;
-}
+    @media only screen and (max-width: $bp-medium) {
+        margin: 6.5rem 6rem 4rem 0;
+    }
 
-@media only screen and (max-width: $bp-xsmall){
-  margin: 3.5rem 6rem 4rem 0;
-}
-@media only screen and (max-width: $bp-xxsmall){
-  margin: 3.5rem 6rem 4rem 0;
-}
+    @media only screen and (max-width: $bp-xsmall) {
+        margin: 3.5rem 6rem 4rem 0;
+    }
+    @media only screen and (max-width: $bp-xxsmall) {
+        margin: 3.5rem 6rem 4rem 0;
+    }
 }
 
 .project {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: 100%;
-  left: 8rem;
-  transform: translateX(-100%);
-  opacity: 0;
-
-  @media only screen and (max-width: $bp-medium){
-    width: 82%;
-    left: 4rem;
-  }
-
-  &__index {
-    color: $color-gray-light;
-    font-size: 4rem;
-  }
-
-  &__name {
-    font-size: 5rem;
-    font-weight: 400;
-    margin-top: 8rem;
-
-    @media only screen and (max-width: $bp-medium){
-      font-size: 4.5rem;
-  }
-
-  @media only screen and (max-width: $bp-xsmall){
-    font-size: 4.1rem;
-    margin-top: 3.5rem;
-  }
-  @media only screen and (max-aspect-ratio: 4/8){
-    font-size: 6.1rem;
-    margin-top: 13.5rem;
-  }
-  }
-  &__links-wrapper {
+    position: absolute;
     display: flex;
-    flex-basis: 60%;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    left: 8rem;
+    transform: translateX(-100%);
+    opacity: 0;
 
-
-    @media only screen and (max-width: 1150px){
-        flex-direction: column;
-    }
-  }
-
-  &__link {
-    font-size: 2rem;
-
-    @media only screen and (max-aspect-ratio: 4/8){
-      font-size: 2.5rem;
-      width: max-content;
+    @media only screen and (max-width: $bp-medium) {
+        width: 82%;
+        left: 4rem;
     }
 
-    @media only screen and (max-width: $bp-xxsmall){
-      font-size: 1.6rem;
-    }
-    &:last-child {
-
-      @media only screen and (max-width: $bp-medium) {
-        margin-top: 1.5rem;
-      }
-    }
-    &:hover img {
-    transform: translateX(-7px);
-    }
-    &:active img {
-    transform: translateX(7px);
+    &__index {
+        color: $color-gray-light;
+        font-size: 4rem;
     }
 
-    & img {
-      transition: transform .2s cubic-bezier(0.46, 0.21, 0, 1.63);
-      margin-right: 1.5rem;
-      width: 5rem;
+    &__name {
+        font-size: 5rem;
+        font-weight: 400;
+        margin-top: 8rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 4.5rem;
+        }
+
+        @media only screen and (max-width: $bp-xsmall) {
+            font-size: 4.1rem;
+            margin-top: 3.5rem;
+        }
+        @media only screen and (max-aspect-ratio: 4/8) {
+            font-size: 6.1rem;
+            margin-top: 13.5rem;
+        }
     }
-  }
+    &__links-wrapper {
+        display: flex;
+        flex-basis: 60%;
+        height: 5.5rem;
+        justify-content: space-between;
 
-  &__text {
-    font-size: 1.8rem;
-    margin-top: 2.5rem;
+        &.flex-column {
+            flex-direction: column;
+        }
 
-    @media only screen and (max-width: $bp-medium){
-      font-size: 2.4rem;
-      margin-top: 4.5rem;
+        @media only screen and (max-width: 1150px) {
+            flex-direction: column;
+        }
     }
 
-    @media only screen and (max-width: $bp-xsmall){
-      font-size: 2.1rem;
-      margin-top: 3.5rem;
+    &__link {
+        font-size: 2rem;
+
+        @media only screen and (max-aspect-ratio: 4/8) {
+            font-size: 2.5rem;
+            width: max-content;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+        }
+        &:last-child {
+            @media only screen and (max-width: $bp-medium) {
+                margin-top: 1.5rem;
+            }
+        }
+        &:hover img {
+            transform: translateX(-7px);
+        }
+        &:active img {
+            transform: translateX(7px);
+        }
+
+        & img {
+            transition: transform 0.2s cubic-bezier(0.46, 0.21, 0, 1.63);
+            margin-right: 1.5rem;
+            width: 5rem;
+        }
     }
-    
-    @media only screen and (max-aspect-ratio: 4/8){
-      font-size: 2.5rem;
-      margin-top: 9.5rem;
+
+    &__text {
+        font-size: 1.8rem;
+        margin-top: 2.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.4rem;
+            margin-top: 4.5rem;
+        }
+
+        @media only screen and (max-width: $bp-xsmall) {
+            font-size: 2.1rem;
+            margin-top: 3.5rem;
+        }
+
+        @media only screen and (max-aspect-ratio: 4/8) {
+            font-size: 2.5rem;
+            margin-top: 9.5rem;
+        }
     }
-    
-    
-  }
 
-  &__stack {
-    margin-top: auto;
-    margin-bottom: 2rem;
-    color: $color-gray-light;
+    &__stack {
+        margin-top: auto;
+        margin-bottom: 2rem;
+        color: $color-gray-light;
 
-    @media only screen and (max-width: $bp-medium){
-      font-size: 1.9rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.9rem;
+        }
     }
-  }
-
-
 }
 
 .project-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-top: 1rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 1rem;
 
-  @media only screen and (max-width: $bp-xsmall){
-    align-items: normal;
-}
+    @media only screen and (max-width: $bp-xsmall) {
+        align-items: normal;
+    }
 }
 
 .active {
-  transform: translateX(0);
-  opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
 }
